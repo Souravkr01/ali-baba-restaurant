@@ -14,7 +14,7 @@ interface ItemProps {
 }
 export function Item(props: ItemProps) {
   const { item, setInViewItem, setCartItems, cartItem } = props;
-  const { image, name, category, description, price, rating } = item;
+  const { image, name } = item;
   const addToCart = (itemsCart: CartItemType) => {
     setCartItems([...(cartItem || []), item]);
   };
